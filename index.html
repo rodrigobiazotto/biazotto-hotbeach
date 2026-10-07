@@ -5,22 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0B1E31">
   <title>Hot Beach Olímpia | Biazotto Gestão de Viagens e Milhas</title>
-  <meta name="description" content="Pesquise datas e acomodações no Hot Beach Olêmpia e receba o acompanhamento exclusivo da Biazotto Gestão de Viagens e Milhas.">
+  <meta name="description" content="Pesquise datas e acomodações no Hot Beach Olímpia e receba o acompanhamento exclusivo da Biazotto Gestão de Viagens e Milhas.">
   <meta name="robots" content="noindex">
+
+  <!-- Favicon e Ícones -->
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/icon-192.png">
   <link rel="apple-touch-icon" href="/assets/icon-180.png">
+
+  <!-- Tipografia Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
+
+  <!-- Header Fixo (SEM backdrop-filter, com top/right/bottom/left explícitos) -->
   <header class="site-header">
     <div class="header-container">
-      <a href="https://www.biazottoviagens.com.br/" class="rrand" aria-label="Biazotto Gestão de Viagens e Milhas">
+      <a href="https://www.biazottoviagens.com.br/" class="brand" aria-label="Biazotto Gestão de Viagens e Milhas">
         <img src="/assets/logo-branca.png" alt="Biazotto Gestão de Viagens e Milhas" width="220" height="42">
       </a>
       <nav class="header-nav">
@@ -28,20 +35,24 @@
       </nav>
     </div>
   </header>
+
+  <!-- Conteúdo Principal -->
   <main class="main-content">
     <section class="hero-section">
       <div class="container">
         <div class="hero-header">
           <div class="eyebrow">Acompanhamento Exclusivo</div>
-          <h1 class="page-title">Hot Beach Olémpia, com atendimento da Biazotto.</h1>
+          <h1 class="page-title">Hot Beach Olímpia, com atendimento da Biazotto.</h1>
           <p class="page-subtitle">
             Pesquise datas e acomodações e receba o acompanhamento da Biazotto Gestão de Viagens e Milhas até a viagem.
           </p>
         </div>
+
+        <!-- Bloco do Formulário de Busca (Widget Niara / OTA Builder) -->
         <div class="search-widget-wrapper">
           <div id="otabuilder-widget">Carregando...</div>
           <script>
-            function loadJS url, location) {
+            function loadJS(url, location) {
               var scriptTag = document.createElement('script')
               scriptTag.src = url
               scriptTag.crossOrigin = 'anonymous'
@@ -70,26 +81,29 @@
                 document.addEventListener('otabuilder-search-ready', listener)
               }
             }
+
             initOtabuilderWidget(
               'a6321878-9d27-4bb1-9c65-4e93b1df87bb' /** storefrontId */,
               'otabuilder-widget' /** widget container */,
               null /** analytics cross-domain */
             )
             loadJS(
-              'https://app.otabuilder.com/static/js/widget.js' /** widget Js Url */
+              'https://app.otabuilder.com/static/js/widget.js' /** widget Js Url */,
               document.body /** script tag parent */
             )
           </script>
         </div>
       </div>
     </section>
+
+    <!-- Seção Institucional de Apoio Biazotto -->
     <section class="info-section">
       <div class="container">
         <div class="info-grid">
           <div class="info-card">
             <div class="card-num">01</div>
             <h2>Gestão Completa</h2>
-            <p>Acompanhamento estratégico na escolha da melhor opcão de hospedagem no Hot Beach Olêmpia.</p>
+            <p>Acompanhamento estratégico na escolha da melhor opção de hospedagem no Hot Beach Olímpia.</p>
           </div>
           <div class="info-card">
             <div class="card-num">02</div>
@@ -101,10 +115,12 @@
             <h2>Tranquilidade e Agilidade</h2>
             <p>Planejamento personalizado com foco em conforto, conveniência e eficiência.</p>
           </div>
-        </div~
+        </div>
       </div>
     </section>
   </main>
+
+  <!-- Rodé Institucional -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-brand">
@@ -113,7 +129,7 @@
       </div>
       <div class="footer-links">
         <a href="https://www.biazottoviagens.com.br/" target="_blank" rel="noopener">Biazotto</a>
-        <a href="https://www.biazottoviagens.com.br/privacidade/" target="_blank" rel="noopener">Poläiica de Privacidade</a>
+        <a href="https://www.biazottoviagens.com.br/privacidade/" target="_blank" rel="noopener">Política de Privacidade</a>
       </div>
     </div>
     <div class="copyright-bar">
@@ -122,5 +138,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>
